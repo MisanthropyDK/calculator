@@ -1,0 +1,15 @@
+#+TITLE: CALCULATOR
+#+DESCRIPTION: A calculator created in bash and C using different conditional statements
+#+LANGUAGE: en
+
+* About
+=CALCULATOR= is a calcualtor created in bash and C for college project
+
+* Installation
+
+** Setting up the Tool
+ 1. [[ git clone https://github.com/MisanthropyDK/calculator ]]
+ 2. cd calculator
+ 3. For C based code - gcc 'file name' and ./a.out
+ 4. For Bash based code bash 'file name'
+ 
