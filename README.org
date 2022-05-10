@@ -3,7 +3,7 @@
 #+LANGUAGE: en
 
 * About
-=CALCULATOR= is a calcualtor created in bash and C for college project
+=CALCULATOR= is created in bash and C for college project
 
 * Installation
 

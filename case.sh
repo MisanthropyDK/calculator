@@ -5,20 +5,16 @@ red="\e[0;31m"
 green="\e[0;32m"
 yellow="\e[0;33m"
 blue="\e[0;34m"
+reset="\e[0m"
 
 clear # the terminal may hopefully look not messed up
 
 # This script can be used for calculating in the terminal.
 
-# name
 
-# read -p "Enter your name:-" nname
 
-# welcome
+echo -e "${red}" && figlet CALCULATOR && echo -e "${reset}"
 
-# echo " WELCUM $nname" | figlet
-
-# read x and y digit
 read -p "enter your X digit:-" Xdigit
 echo "$Xdigit"
 
@@ -39,9 +35,12 @@ echo "5) Exponentiation"
 echo "6) Modular Division"
 echo "7) Print pi"
 echo "8) Exit"
+echo "9) History"
 
 echo "Select any of these above in digit form"
 read -p "digit:-" andigit
+
+echo "x digit: $Xdigit $andigit y digit: $Ydigit" >> history.txt
 
 # case
 case $andigit in
@@ -80,9 +79,12 @@ if (( $pidecimal>1000 )) ; then
 fi
 echo "$pi" | cut -cl-$to
 ;;
-8|exit|Exit|EXIT)
+8|Eexit|Exit|EXIT)
 # echo "Fuck You" | figlet
 #sleep 3s
+;;
+9|history|his|History|His)
+  cat history.txt
 ;;
 esac
 
